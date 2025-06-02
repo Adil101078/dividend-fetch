@@ -4,8 +4,8 @@
   "main": "server.js",
   "scripts": {
     "postinstall": "PUPPETEER_SKIP_DOWNLOAD=true",
-    "start": "node app.js",
-    "dev": "node server.js"
+    "start": "node server.js",
+    "dev": "node app.js"
   },
   "dependencies": {
     "agent-base": "^7.1.3",
