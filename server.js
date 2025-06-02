@@ -182,9 +182,9 @@ async function scrapeDividendData(ticker) {
 
 		// Wait for table to load with multiple selectors
 		await Promise.race([
-			page.waitForSelector("div[data-testid='stock-dividends-table'] table tbody tr", { timeout: 10000 }),
-			page.waitForSelector('table tbody tr', { timeout: 10000 }), // Fallback selector
-			new Promise((_, reject) => setTimeout(() => reject(new Error('Table load timeout')), 15000)),
+			page.waitForSelector("div[data-testid='stock-dividends-table'] table tbody tr", { timeout: 20000 }),
+			page.waitForSelector('table tbody tr', { timeout: 20000 }), // Fallback selector
+			new Promise((_, reject) => setTimeout(() => reject(new Error('Table load timeout')), 25000)),
 		])
 
 		// Enhanced data extraction
